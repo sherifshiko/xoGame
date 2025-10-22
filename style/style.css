@@ -1,0 +1,82 @@
+
+section{
+    background-image: url(./../images/back-ground.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bubble{
+    width: 50px;
+    border-radius: 50%;
+}
+.bubble-1{
+ animation: bubbleMove 8s  infinite linear;
+}
+
+.bubble-2{
+    animation: bubbleMove 10s  infinite linear;
+}
+
+.bubble-3{
+    animation: bubbleMove 9s  infinite linear;
+}
+
+.bubble-4{
+    animation: bubbleMove 6s  infinite linear;
+}
+
+.bubble-5{
+    animation: bubbleMove 10s  infinite linear;
+}
+
+.bubble-6{
+    animation: bubbleMove 9s  infinite linear;
+}
+
+.bubble-7{
+    
+    animation: bubbleMove 7s  infinite linear;
+}
+
+.bubble-8{
+    animation: bubbleMove 6s  infinite linear;
+}
+
+.cell{
+    height: 100px;
+    border: 2px solid #000;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    
+
+}
+
+.cell:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.fs-70{
+    font-size: 70px;
+}
+
+
+
+
+
+@keyframes bubbleMove{
+    from{
+    transform: translateY(5px);
+
+    }
+
+    to{
+    transform: translateY(-500px);
+    opacity: 0;
+    }
+}
+
