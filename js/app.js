@@ -10,7 +10,7 @@ var dashboard = document.getElementById('dashboard')
 var safetyStart = document.getElementById('safetyStart');
 var winner = document.getElementById('winner')
 title.classList.add(colorPlayer)
-dashboard.innerText = " who will win....?  "
+dashboard.innerText = " who will winner....?  "
 
 
 
@@ -55,11 +55,13 @@ function checkWinner() {
             // turn-1   [1,2,3]
             if (allCell[0].innerText == allCell[1].innerText && allCell[1].innerText == allCell[2].innerText && allCell[2].innerText !== "") {
                 if (allCell[0].innerText == "X" && allCell[1].innerText == "X" && allCell[2].innerText == "X") {
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
                     dashboard.innerText = "the player ...X... is the winner   "
 
                 } else if (allCell[0].innerText == "O" && allCell[1].innerText == "O" && allCell[2].innerText == "O") {
                     dashboard.innerText = "the player ...O... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
 
                 }
@@ -70,11 +72,13 @@ function checkWinner() {
             } else if (allCell[3].innerText == allCell[4].innerText && allCell[4].innerText == allCell[5].innerText && allCell[5].innerText !== "") {
                 if (allCell[3].innerText == "X" && allCell[4].innerText == "X") {
                     dashboard.innerText = "the player ...X... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
 
 
                 } else if (allCell[3].innerText == "O" && allCell[4].innerText == "O") {
                     dashboard.innerText = "the player ...O... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
 
 
@@ -86,9 +90,11 @@ function checkWinner() {
             } else if (allCell[6].innerText == allCell[7].innerText && allCell[7].innerText == allCell[8].innerText && allCell[8].innerText !== "") {
                 if (allCell[6].innerText == "X" && allCell[7].innerText == "X") {
                     dashboard.innerText = "the player ...X... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
                 } else if (allCell[6].innerText == "O" && allCell[7].innerText == "O") {
                     dashboard.innerText = "the player ...O... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
                 }
                 allCell[6].classList.add('bg-winner');
@@ -98,10 +104,12 @@ function checkWinner() {
             } else if (allCell[2].innerText == allCell[4].innerText && allCell[4].innerText == allCell[6].innerText && allCell[6].innerText !== "") {
                 if (allCell[2].innerText == "X" && allCell[4].innerText == "X") {
                     dashboard.innerText = "the player ...X... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
 
                 } else if (allCell[2].innerText == "O" && allCell[4].innerText == "O") {
                     dashboard.innerText = "the player ...O... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
 
                 }
@@ -112,10 +120,12 @@ function checkWinner() {
             } else if (allCell[0].innerText == allCell[4].innerText && allCell[4].innerText == allCell[8].innerText && allCell[8].innerText !== "") {
                 if (allCell[0].innerText == "X" && allCell[4].innerText == "X") {
                     dashboard.innerText = "the player ...X... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
 
                 } else if (allCell[0].innerText == "O" && allCell[4].innerText == "O") {
                     dashboard.innerText = "the player ...O... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
 
                 }
@@ -126,10 +136,12 @@ function checkWinner() {
             } else if (allCell[0].innerText == allCell[3].innerText && allCell[3].innerText == allCell[6].innerText && allCell[6].innerText !== "") {
                 if (allCell[0].innerText == "X" && allCell[3].innerText == "X") {
                     dashboard.innerText = "the player ...X... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
 
                 } else if (allCell[0].innerText == "O" && allCell[3].innerText == "O") {
                     dashboard.innerText = "the player ...O... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
 
                 }
@@ -140,10 +152,12 @@ function checkWinner() {
             } else if (allCell[1].innerText == allCell[4].innerText && allCell[4].innerText == allCell[7].innerText && allCell[7].innerText !== "") {
                 if (allCell[1].innerText == "X" && allCell[4].innerText == "X") {
                     dashboard.innerText = "the player ...X... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
 
                 } else if (allCell[1].innerText == "O" && allCell[4].innerText == "O") {
                     dashboard.innerText = "the player ...O... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
 
                 }
@@ -154,10 +168,12 @@ function checkWinner() {
             } else if (allCell[2].innerText == allCell[5].innerText && allCell[5].innerText == allCell[8].innerText && allCell[8].innerText !== "") {
                 if (allCell[2].innerText == "X" && allCell[5].innerText == "X") {
                     dashboard.innerText = "the player ...X... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
 
                 } else if (allCell[2].innerText == "O" && allCell[5].innerText == "O") {
                     dashboard.innerText = "the player ...O... is the winner   "
+                    winner.classList.remove('d-none')
                     winner.classList.add('d-block')
 
                 }
@@ -168,7 +184,7 @@ function checkWinner() {
                 dashboard.innerText = "Draw...! "
 
             } else {
-                dashboard.innerText = "who will win....? "
+                dashboard.innerText = "who will winner....? "
             }
         }
     }
@@ -182,17 +198,15 @@ reset.addEventListener('click', function () {
     for (var cell of allCell) {
         cell.innerText = "";
         dashboard.innerText = "who will winner....?"
-        winner.classList.add('d-block')
+        winner.classList.add('d-none')
         cell.classList.remove("bg-winner")
-
-    }
-    winner.classList.add('d-none')
+        checkWinner()
+    }    
     
-    checkWinner()
-    cell.classList.add('d-block')
-    
-
 })
+
+
+
 
 
 
