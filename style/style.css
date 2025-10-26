@@ -87,6 +87,16 @@ section{
     background-color: aqua;
 }
 
+.countX{
+    top: 50%;
+    left: 10%;
+}
+
+.countO{
+    top: 50%;
+    left: 80%;
+}
+
 
 
 
