@@ -43,6 +43,7 @@ section{
     animation: bubbleMove 6s  infinite linear;
 }
 
+
 .cell{
     height: 100px;
     border: 2px solid #000;
@@ -62,6 +63,28 @@ section{
 
 .fs-70{
     font-size: 70px;
+}
+
+.safety-start{
+    top: 24%;
+    bottom: 14%;
+    width: 100%;
+    z-index: 9999999;
+    opacity: 0;
+    display: block;
+}
+
+.winner{
+    top: 20%;
+    bottom: 26%;
+    width: 100%;
+    z-index: 9999999;
+    opacity: 0;
+    display: none;
+}
+
+.bg-winner{
+    background-color: aqua;
 }
 
 
